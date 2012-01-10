@@ -14,7 +14,7 @@ body {
 	font-family: 'DejaVuSansMonoBook';
 	color: #fff;
 	font-size: 14px;
-	background: #7b8a9b;
+	background: #f2f2f2;
 }
 
 .header h1 {
@@ -79,7 +79,7 @@ padding: 20px; /*border-radius: 3px;
 	width: 100%;
 	height: 100px;
 	min-height: 100px;
-	background: #7b8a9b;
+	background: #f2f2f2;
 	z-index: 32;
 }
 
@@ -201,7 +201,7 @@ max-width: 960px;
 height: 100%;
 	z-index: 1;
 	overflow: hidden;
-	background: #7b8a9b;
+	background: #f2f2f2;
 }
 
 .terminalRightWrapper {
@@ -212,7 +212,7 @@ height: 100%;
 	*/
 height: 100%;
 	z-index: 1;
-	background: #7b8a9b;
+	background: #f2f2f2;
 }
 
 /************ footer ************/
@@ -224,7 +224,7 @@ height: 100%;
 	min-height: 100px; /*background: lime;
 	*/
 background: #085563;
-	background: #7b8a9b;
+	background: #f2f2f2;
 	z-index: 33;
 }
 
