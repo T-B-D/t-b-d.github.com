@@ -68,6 +68,9 @@ ready(function(){
       } else if (command === "sponsors") {
         output.innerHTML = output.innerHTML + oldLabel + sponsors;
         newLabel();
+      } else if (command === "help") {
+        output.innerHTML = output.innerHTML + oldLabel + help;
+        newLabel();
       } else {
         output.innerHTML = output.innerHTML + oldLabel + "command not found";
       }
