@@ -54,8 +54,8 @@ ready(function(){
       var oldLabel = '<p>' + commandInputLabel.innerHTML + command + '</p>';
       var newLabel = function(){ commandInputLabel.innerHTML = "t-b-d.org:~ " + command + "$"; }
        
-      if (command === "about") {
-        output.innerHTML = output.innerHTML + '<p>' + commandInputLabel.innerHTML + " " + command + '</p>' + about;
+      if (command === "hackathon") {
+        output.innerHTML = output.innerHTML + '<p>' + commandInputLabel.innerHTML + " " + command + '</p>' + hackathon;
         newLabel();
       } else if (command === "crew") {
         output.innerHTML = output.innerHTML + '<p>' + commandInputLabel.innerHTML + " " + command + '</p>' + crew;

@@ -26,6 +26,8 @@ input {
 	-webkit-tap-highlight-color:none;
 	outline:none;
 	font-size: 14px;
+	margin:0;
+	padding: 0;
 }
 
 ol {
