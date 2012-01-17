@@ -71,6 +71,9 @@ ready(function(){
       } else if (command === "help") {
         output.innerHTML = output.innerHTML + oldLabel + help;
         newLabel();
+      } else if (command === "contact") {
+        output.innerHTML = output.innerHTML + oldLabel + contact;
+        newLabel();
       } else {
         output.innerHTML = output.innerHTML + oldLabel + "command not found";
       }
