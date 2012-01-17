@@ -47,35 +47,35 @@ ready(function(){
     if (unicode === 13) {
       command = commandInput.value;
       var commandInputLabel = document.getElementById("commandInputLabel");
-      var oldLabel = '<p>' + commandInputLabel.innerHTML + '</p>';
+      var oldLabel = '<p>' + commandInputLabel.innerHTML + command + '</p>';
       var newLabel = function(){ commandInputLabel.innerHTML = "t-b-d.org:~ " + command + "$"; }
        
       if (command === "about") {
-        output.innerHTML = output.innerHTML + oldLabel + about;
+        output.innerHTML = output.innerHTML + '<p>' + commandInputLabel.innerHTML + " " + command + '</p>' + about;
         newLabel();
       } else if (command === "crew") {
-        output.innerHTML = output.innerHTML + oldLabel + crew;
+        output.innerHTML = output.innerHTML + '<p>' + commandInputLabel.innerHTML + " " + command + '</p>' + crew;
         newLabel();
       } else if (command === "manifesto") {
-        output.innerHTML = output.innerHTML + oldLabel + manifesto;
+        output.innerHTML = output.innerHTML + '<p>' + commandInputLabel.innerHTML + " " + command + '</p>' + manifesto;
         newLabel();
       } else if (command === "program") {
-        output.innerHTML = output.innerHTML + oldLabel + program;
+        output.innerHTML = output.innerHTML + '<p>' + commandInputLabel.innerHTML + " " + command + '</p>' + program;
         newLabel();
       } else if (command === "register") {
-        output.innerHTML = output.innerHTML + oldLabel + register;
+        output.innerHTML = output.innerHTML + '<p>' + commandInputLabel.innerHTML + " " + command + '</p>' + register;
         newLabel();
       } else if (command === "sponsors") {
-        output.innerHTML = output.innerHTML + oldLabel + sponsors;
+        output.innerHTML = output.innerHTML + '<p>' + commandInputLabel.innerHTML + " " + command + '</p>' + sponsors;
         newLabel();
       } else if (command === "help") {
-        output.innerHTML = output.innerHTML + oldLabel + help;
+        output.innerHTML = output.innerHTML + '<p>' + commandInputLabel.innerHTML + " " + command + '</p>' + help;
         newLabel();
       } else if (command === "contact") {
-        output.innerHTML = output.innerHTML + oldLabel + contact;
+        output.innerHTML = output.innerHTML + '<p>' + commandInputLabel.innerHTML + " " + command + '</p>' + contact;
         newLabel();
       } else {
-        output.innerHTML = output.innerHTML + oldLabel + "command not found";
+        output.innerHTML = output.innerHTML + '<p>' + commandInputLabel.innerHTML + " " + command + '</p>' + "command not found";
       }
       
       commandInput.value = "";
