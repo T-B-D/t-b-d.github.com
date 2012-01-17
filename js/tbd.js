@@ -31,9 +31,13 @@ ready(function(){
 
 
   window.onkeypress = input;
+
   var command = "";
   var commandInput = document.getElementById("commandInput");
   var output = document.getElementById("output");
+
+  
+  commandInput.focus();
 
   function input(e) {
     // var evtobj=window.event? event : e;
