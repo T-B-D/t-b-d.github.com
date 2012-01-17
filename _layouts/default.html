@@ -14,9 +14,10 @@
 <link rel="stylesheet" href="/css/media.css" media="(max-width : 1024px)">
 
 
-<!-- <link rel="stylesheet" href="styles/ie8.css"> -->
 <!--[if lt IE 9]>
-    <script src="/js/ieBan.js"></script>
+    <style type="text/css">
+        #container {display:none;}
+    </style>
 <![endif]-->
 
 <!-- Yeah, right now I want my script to be blocking -->
@@ -37,6 +38,9 @@
 </script>
 </head>
 <body id="body">
+    <!--[if lt IE 9]><h1 style="margin:50px; color:#222; font-size:20px;">Hi there! This site is not for people with old web browsers. Please try again.</h1><![endif]-->
+
+
     <div id="container" class="table h100p w100p">
         <div class="cell w100p">
             <div class="mA w80p maxW800 br5 pt1 pb1 br1 b0a25 bs1 ">
