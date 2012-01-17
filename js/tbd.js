@@ -52,20 +52,26 @@ ready(function(){
        
       if (command === "about") {
         output.innerHTML = output.innerHTML + oldLabel + about;
+        newLabel();
       } else if (command === "crew") {
         output.innerHTML = output.innerHTML + oldLabel + crew;
+        newLabel();
       } else if (command === "manifesto") {
         output.innerHTML = output.innerHTML + oldLabel + manifesto;
+        newLabel();
       } else if (command === "program") {
         output.innerHTML = output.innerHTML + oldLabel + program;
+        newLabel();
       } else if (command === "register") {
         output.innerHTML = output.innerHTML + oldLabel + register;
+        newLabel();
       } else if (command === "sponsors") {
         output.innerHTML = output.innerHTML + oldLabel + sponsors;
+        newLabel();
       } else {
         output.innerHTML = output.innerHTML + oldLabel + "command not found";
       }
-      newLabel();
+      
       commandInput.value = "";
       command = "";
       clearInterval(interval)
