@@ -28,6 +28,7 @@ input {
 	font-size: 14px;
 	margin:0;
 	padding: 0;
+	
 }
 
 ol {
@@ -36,8 +37,9 @@ ol {
 	padding:0;
 }
 
-article a, p {
+article a, p, label, input {
 	margin: 5px 0 5px 0;
+	padding:0;
 }
 
 /************ Dimensions ************/
@@ -152,9 +154,9 @@ footer a {
 .pb3 {padding-bottom:3px}
 
 
-.pr3 {
-	padding-right:3px;
-}
+.pr3 {padding-right:3px;}
+.pr40 {padding-right:40px;}
+
 
  /*
  *********** Height
@@ -224,6 +226,10 @@ footer a {
 
 .table {
 	display:table;
+}
+
+.row {
+	display:table-row;
 }
 
 .cell {
