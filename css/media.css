@@ -1,0 +1,37 @@
+body {
+	-webkit-text-size-adjust: none;
+}
+
+/*
+@media (max-width:600px) {
+	.header, .footer {
+	height: 34px;
+	min-height: 34px;
+}
+
+.footer {
+	height: 24px;
+	min-height: 24px;
+}
+
+.terminalTopOuter {
+	margin-top: 10px;
+}
+
+.header header,.footer footer {
+	display: none;
+}
+
+.terminal {
+	margin: 34px auto 24px;
+}
+
+.terminal,.terminalTopOuter,.terminalBottomOuter {
+	width: 94%;
+}
+
+.terminalLeftWrapper,.terminalRightWrapper {
+	width: 3%;
+}
+
+}*/

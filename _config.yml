@@ -1,0 +1,4 @@
+server: true
+permalink: /blog/:year/:month/:title/
+auto: true
+server_port: 4000

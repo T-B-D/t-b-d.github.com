@@ -1,0 +1,320 @@
+/*
+ * 
+ * t-b-d.org
+ * 
+ *
+ *
+ */
+
+html, body {
+	height:100%;
+}
+
+body {
+	margin: 0;
+	padding:0;
+	font-family: 'DejaVuSansMonoBook';
+	color: #fff;
+	font-size: 14px;
+	background: #f2f2f2;
+}
+
+input {
+	background:transparent;
+	border:none;
+	color:#fff;
+	-webkit-tap-highlight-color:none;
+	outline:none;
+	font-size: 14px;
+}
+
+ol {
+	list-style-type: none;
+	margin:0;
+	padding:0;
+}
+
+p {
+	margin: 5px 0 5px 0;
+}
+
+/************ Dimensions ************/
+
+
+
+/************ footer ************/
+/*background: rgba(0, 0, 0, .80)*/
+.footer {
+	position: fixed;
+	bottom: 0;
+	width: 100%;
+	height: 100px;
+	min-height: 100px;
+	background: #085563;
+	background: #f2f2f2;
+	z-index: 33;
+}
+
+.footer-content {
+	margin: 0 auto;
+}
+
+footer {
+	display: table;
+	margin: 0 auto;
+	width: 100%;
+	padding: 0 10%;
+	max-width: 960px;
+}
+
+footer ul {
+	display: table-row;
+	list-style-type: none;
+	margin: 0;
+	padding: 0; /*width: 100%;
+	*/
+}
+
+footer li {
+	display: table-cell;
+	min-width: 100px;
+	width: 25%;
+	height: 80px;
+	vertical-align: middle; /*background: green;
+	*/
+}
+
+footer a {
+	margin: 0 auto;
+	display: block;
+	width: 141px;
+	height: 43px;
+	overflow: hidden;
+	text-indent: -999px;
+}
+
+.sponsor-menmo {
+	border: 4px solid rgba(255,255,255,.9);
+
+	-webkit-border-radius: 4px;
+	-moz-border-radius: 4px;
+	border-radius: 4px;
+	padding: 4px;
+	background: rgba(255,255,255,.9) url(../images/sponsor-menmo.png) no-repeat center center;
+}
+
+
+
+
+/*
+ ************************** Framework 
+ */
+
+
+
+/*
+ **************** Dimension
+ */
+
+
+
+/*
+ *********** Margin
+ */
+
+.mA {margin: 0 auto}
+
+.mt10 {margin-top:10px;}
+.ml1 {margin-left:1px}
+.ml4 {margin-left:4px}
+
+.mr1 {margin-right:1px}
+
+
+/*
+ *********** Padding
+ */
+
+/*.pa1 {
+	padding:1px;
+}*/
+
+.pa10 {padding: 20px}
+
+
+.pt0 {padding-top:0px}
+.pt1 {padding-top:1px}
+.pt4 {padding-top:4px}
+
+.pb1 {padding-bottom:1px}
+.pb3 {padding-bottom:3px}
+
+
+.pr3 {
+	padding-right:3px;
+}
+
+ /*
+ *********** Height
+ */
+
+
+.h1 {height:1px}
+.h4 {height:4px}
+.h500 {height:500px}
+
+.h80p {height:80%}
+.h100p {height:100%}
+
+ /*
+ *********** Width
+ */
+.minW500 	{min-width:700px}
+.maxW700 	{max-width:700px}
+.maxW800 	{max-width:800px}
+.w80p 		{width:80%}
+.w100p 		{width:100%}
+
+
+
+
+ /*
+ *********** Border Radius
+ */
+.br5 {
+	-webkit-border-radius: 5px;
+	-moz-border-radius: 5px;
+	border-radius: 5px;
+}
+
+.br5500 {
+	-webkit-border-radius:5px 5px 0 0 / 5px 5px 0 0;
+	-moz-border-radius:5px 5px 0 0 / 5px 5px 0 0;
+	border-radius:5px 5px 0 0 / 5px 5px 0 0;
+}
+
+.br4400 {
+	-webkit-border-radius:4px 4px 0 0 / 4px 4px 0 0;
+	-moz-border-radius:4px 4px 0 0 / 4px 4px 0 0;
+	border-radius:4px 4px 0 0 / 4px 4px 0 0;
+}
+
+.br0044 {
+	-webkit-border-radius:0 0 4px 4px / 0 0 4px 4px ;
+	-moz-border-radius:0 0 4px 4px / 0 0 4px 4px ;
+	border-radius:0 0 4px 4px / 0 0 4px 4px ;
+}
+
+
+/*
+ **************** Position
+ */
+
+.relative {
+	position:relative;
+}
+
+.ib {display:inline-block;}
+
+/*
+ *********** Table
+ */
+
+.table {
+	display:table;
+}
+
+.cell {
+	display:table-cell;
+	vertical-align:middle;
+}
+
+/*
+ *********** Overflow
+ */
+
+.oys {overflow-y:scroll}
+
+/*
+ **************** Colors
+ */
+
+ /*
+ *********** Background Color
+ */
+.b6A {background: #6a6a6a}
+
+.b0a80 {
+	background:	#000;
+	background: rgba(0,0,0,.80);
+}
+
+.b0a25 {
+	background: rgba(0, 0, 0, .25);
+	background: -webkit-linear-gradient(270deg, rgba(0,0,0,0.25) 23px, rgba(0,0,0,0.25) 23px,rgba(0,0,0,0.5) 23px,rgba(0,0,0,0.8) 24px, rgba(0,0,0,0.8) 100%);
+	background: -moz-linear-gradient(270deg, rgba(0,0,0,0.25) 24px, rgba(0,0,0,0.25) 24px,rgba(0,0,0,0.5) 25px,rgba(0,0,0,0.8) 25px, rgba(0,0,0,0.8) 100%);
+	background: -o-linear-gradient(270deg, rgba(0,0,0,0.25) 23px, rgba(0,0,0,0.25) 23px,rgba(0,0,0,0.5) 23px,rgba(0,0,0,0.8) 24px, rgba(0,0,0,0.8) 100%);
+	background: -ms-linear-gradient(270deg, rgba(0,0,0,0.25) 23px, rgba(0,0,0,0.25) 23px,rgba(0,0,0,0.5) 23px,rgba(0,0,0,0.8) 24px, rgba(0,0,0,0.8) 100%);
+	background: linear-gradient(270deg, rgba(0,0,0,0.25) 23px, rgba(0,0,0,0.25) 23px,rgba(0,0,0,0.5) 23px,rgba(0,0,0,0.8) 24px, rgba(0,0,0,0.8) 100%);
+}
+
+.bE5 {
+	background: #e5e5e5;
+	background: -webkit-linear-gradient(90deg , #b2b2b2 0%, #e5e5e5 100%);
+	background: -moz-linear-gradient(90deg , #b2b2b2 0%, #e5e5e5 100%);
+	background: -o-linear-gradient(90deg , #b2b2b2 0%, #e5e5e5 100%);
+	background: -ms-linear-gradient(90deg , #b2b2b2 0%, #e5e5e5 100%);
+	background: linear-gradient(90deg , #b2b2b2 0%, #e5e5e5 100%);
+}
+
+ /*
+ *********** Box Shadow
+ */
+ .bs1 {
+ 	box-shadow:0 0 10px 0 #000;
+ }
+
+/*
+ **************** Type
+ */
+
+h1,h2,h3,h4,h5,h6 {
+	font-size: 14px;
+	margin: 0;
+	padding: 0;
+}
+
+.tac{text-align:center;}
+
+.p1 {
+	font: 13px 'DejaVuSansMonoBook', Monaco, 'Lucida Console', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+	text-shadow: 0 1px 0 #fff;
+	color: #626262;
+}
+
+a {color: #cacaff;}
+
+
+/*
+ **************** Scroller
+ */
+
+
+::-webkit-scrollbar {
+    width: 8px;
+    background:rgba(155,155,155,0.2);
+    /*background:pink;*/
+}
+
+::-webkit-scrollbar-track {
+	/*padding:3px;*/
+	margin:2px;
+    /*background:rgba(155,155,155,0.2);*/
+    /*border-radius:4px;*/
+}
+
+::-webkit-scrollbar-thumb {
+    border-radius:4px;
+    background:#666;
+    /*background:#333;*/
+}

@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html dir="ltr" lang="en-US"> 
+<head>
+    <meta charset="UTF-8" />
+    <title>{% if page.title %}{{ page.title }} — {% endif %}TBD</title>
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="/css/style.css" />
+
+</head>
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
+<link rel="stylesheet" href="/css/fonts.css">
+<link rel="stylesheet" href="/css/style.css">
+<link rel="stylesheet" href="/css/media.css" media="(max-width : 1024px)">
+<script src="/js/tbd.js"></script>
+
+
+<!--[if lt IE 9]>
+    <link rel="stylesheet" href="styles/ie8.css">
+    <script>
+        document.createElement('header');
+        document.createElement('nav');
+        document.createElement('section');
+        document.createElement('article');
+        document.createElement('aside');
+        document.createElement('footer');
+        document.createElement('hgroup');
+    </script>
+<![endif]-->
+
+<!-- Yeah, right now I want my script to be blocking -->
+
+
+ <script type="text/javascript">
+
+//   var _gaq = _gaq || [];
+//   _gaq.push(['_setAccount', 'UA-28196480-1']);
+//   _gaq.push(['_trackPageview']);
+
+//   (function() {
+//     var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+//     ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+//     var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+//   })();
+
+// </script>
+</head>
+<body>
+    <div class="table h100p w100p">
+        <div class="cell w100p">
+            <div class="mA w80p maxW800 br5 pt1 pb1 br1 b0a25 bs1 ">
+                    <div class="br5500 ml1 mr1">
+                        <div class="bE5 br4400 tac">
+                            <h1 class="p1 pt4 pb3">{% if page.title %} {{ page.title }} — {% endif %} TBD<!--  — 86x24 --></h1>
+                        </div>
+                        <div class="h1 b6A br4400"></div>
+                    </div>
+                    <div class="b0a80 br0044 ml1 mr1">
+                    <!-- Add pr3 to get webkit scroll bar padding correct, can't be used in moz -->
+                        <div id="terminal" class="oys h500 br0044 pa10 pt0">
+                                                    <!-- <h1>TBD</h1> -->
+                            <p class="mt10">t-b-d.org:~ home$ help</p>
+                            <ol>
+                                <!-- <li><a href="/">home</a></li> -->
+                                <!-- <li><a href="/location/">location</a></li> -->
+                                
+                                <li><a id="about" href="/about/">about</a></li>
+                                <li><a id="crew" href="/crew/">crew</a></li>
+                                <li><a id="manifesto" href="/manifesto/">manifesto</a></li>
+                                <li><a id="program" href="/program/">program</a></li>
+                                <li><a id="register" href="/register/">register</a></li>
+                                <li><a id="sponsors" href="/sponsors/">sponsors</a></li>
+                            </ol>
+                            {{ content }}
+                            <div id="output"></div>
+                            <label id="commandInputLabel" for="commandInput">t-b-d.org:~ {{ page.title }}$</label>
+                            <input id="commandInput" class="" type="text" style="" autofocus>
+                        </div>
+<!--                <div class="h4 br0044 b0a80 ml1 mr1">
+                        <div class="fr h100p" style="width: 10px; background:magenta"></div>
+                    </div> -->
+                </div>
+            </div>
+        </div>
+    </div>                    
+<!--    
+    <footer>
+        <ul>
+            <li><a class="sponsor-menmo" href="#">Sponsor 1</a></li>
+            <li><a class="sponsor" href="#">Sponsor 2</a></li>
+            <li><a class="sponsor" href="#">Sponsor 3</a></li>
+            <li><a class="sponsor" href="#">Sponsor 4</a></li>
+        </ul>
+    </footer>
+ -->
+
+<script src="/js/output.js"></script>
+</body>
+</html>
