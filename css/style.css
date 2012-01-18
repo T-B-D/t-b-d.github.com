@@ -20,6 +20,7 @@ body {
 }
 
 input {
+	font-family: 'DejaVuSansMonoBook';
 	background:transparent;
 	border:none;
 	color:#fff;
@@ -28,7 +29,7 @@ input {
 	font-size: 14px;
 	margin:0;
 	padding: 0;
-	
+
 }
 
 ol {
