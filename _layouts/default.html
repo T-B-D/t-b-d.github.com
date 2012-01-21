@@ -35,45 +35,44 @@
     <div id="container" class="table h100p w100p">
         <div class="cell w100p">
             <div class="mA w80p maxW800 br5 pt1 pb1 br1 b0a25 bs1 ">
-                    <div class="br5500 ml1 mr1">
-                        <div class="bE5 br4400 tac">
-                            <h1 class="p1 pt4 pb3">{% if page.title %} {{ page.title }} — {% endif %} TBD<!--  — 86x24 --></h1>
-                        </div>
-                        <div class="h1 b6A br4400"></div>
+                <header class="br5500 ml1 mr1">
+                    <div class="bE5 br4400 tac">
+                        <h1 id="terminalHeading" class="p1 pt4 pb3">{% if page.title %} {{ page.title }} — {% endif %} TBD<!--  — 86x24 --></h1>
                     </div>
-                    <div class="b0a80 br0044 ml1 mr1">
-                    <!-- Add pr3 to get webkit scroll bar padding correct, can't be used in moz -->
-                        <div id="terminal" class="oys h500 br0044 pa10 pt0">
-                                                    <!-- <h1>TBD</h1> -->
-                            <hgroup class="mt10">
-                                <h1>TBD</h1>
-                                <h2>Hacking on big problems</h2>
-                                <h3>Feb 10-12, 2012, Djäkne Kaffebar, Malmö</h3>
-                            </hgroup>
+                    <div class="h1 b6A br4400"></div>
+                </header>
+                <div class="b0a80 br0044 ml1 mr1">
+                <!-- Add pr3 to get webkit scroll bar padding correct, can't be used in moz -->
+                    <article id="terminal" class="oys h500 br0044 pa10 pt0">
+                        <hgroup class="mt10">
+                            <h1>TBD</h1>
+                            <h2>Hacking on big problems</h2>
+                            <h3>Feb 10-12, 2012, Djäkne Kaffebar, Malmö</h3>
+                        </hgroup>
 
-                            <p class="mt10">t-b-d.org:~ home$ help</p>
-                            <article>
-                                <ol class="table">
-                                    <!-- <li><a href="/">home</a></li> -->
-                                    <!-- <li><a href="/location/">location</a></li> -->
-                                    <!-- <li class="row"><a id="manifesto" class="cell pr40" href="/manifesto/">manifesto</a><p class="cell">get registration information and sign up</p></li> -->
+                        <p class="mt10">t-b-d.org:~ home$ help</p>
+                        <nav>
+                            <ol class="table">
+                                <!-- <li><a href="/">home</a></li> -->
+                                <!-- <li><a href="/location/">location</a></li> -->
+                                <!-- <li class="row"><a id="manifesto" class="cell pr40" href="/manifesto/">manifesto</a><p class="cell">get registration information and sign up</p></li> -->
 
-                                    <li class="row"><a id="hackathon" class="cell pr40" href="/hackathon/">hackathon</a><p class="cell">get details for the event</p></li>
-                                    <li class="row"><a id="program" class="cell pr40" href="/program/">program</a><p class="cell">get the schedule of the event</p></li>
-                                    <li class="row"><a id="register" class="cell pr40" href="/register/">register</a><p class="cell">get registration information and sign up</p></li>
-                                    <li class="row"><a id="sponsors" class="cell pr40" href="/sponsors/">sponsors</a><p class="cell">get a list of sponsors who made the event possible</p></li>
-                                    <li class="row"><a id="crew" class="cell pr40" href="/crew/">crew</a><p class="cell">get a list of event hosts and facilitators</p></li>
-                                    <li class="row"><a id="help" class="cell pr40" href="/help/">help</a><p class="cell">get list of commands</p></li>
-                                    <!-- <li><a id="contact" href="/contact/">contact</a></li> -->
-                                </ol>
-                            </article>
-                            {{ content }}
-                            <div id="output"></div>
-                            
-                            <div>
-                                <label id="commandInputLabel" class="ib" for="commandInput">t-b-d.org:~ {{ page.title }}$</label> <input id="commandInput" class="" type="text" autofocus>
-                            </div>
+                                <li class="row"><a id="hackathon" class="cell pr40" href="/hackathon/">hackathon</a><p class="cell">get details for the event</p></li>
+                                <li class="row"><a id="program" class="cell pr40" href="/program/">program</a><p class="cell">get the schedule of the event</p></li>
+                                <li class="row"><a id="register" class="cell pr40" href="/register/">register</a><p class="cell">get registration information and sign up</p></li>
+                                <li class="row"><a id="sponsors" class="cell pr40" href="/sponsors/">sponsors</a><p class="cell">get a list of sponsors who made the event possible</p></li>
+                                <li class="row"><a id="crew" class="cell pr40" href="/crew/">crew</a><p class="cell">get a list of event hosts and facilitators</p></li>
+                                <li class="row"><a id="help" class="cell pr40" href="/help/">help</a><p class="cell">get list of commands</p></li>
+                                <!-- <li><a id="contact" href="/contact/">contact</a></li> -->
+                            </ol>
+                        </nav>
+                        {{ content }}
+                        <div id="output"></div>
+                        
+                        <div>
+                            <label id="commandInputLabel" class="ib" for="commandInput">t-b-d.org:~ {{ page.title }}$</label> <input id="commandInput" class="" type="text" autofocus>
                         </div>
+                    </article>
 <!--                <div class="h4 br0044 b0a80 ml1 mr1">
                         <div class="fr h100p" style="width: 10px; background:magenta"></div>
                     </div> -->

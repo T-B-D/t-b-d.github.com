@@ -47,33 +47,43 @@ ready(function(){
     if (unicode === 13) {
       command = commandInput.value;
       var commandInputLabel = document.getElementById("commandInputLabel");
-      // var oldLabel = '<p><span class="ib">' + commandInputLabel.innerHTML + '</span><span class="ib">' + command + '</span></p>';
-      var newLabel = function(){ commandInputLabel.innerHTML = "t-b-d.org:~ " + command + "$"; }
+      var terminalHeading = document.getElementById("terminalHeading");
+      var newLabel = function(){ return commandInputLabel.innerHTML = "t-b-d.org:~ " + command + "$"; }
       var newOutput = function(content){return output.innerHTML = output.innerHTML + '<div><label class="ib">' + commandInputLabel.innerHTML + '</label> <input disabled value="' + command + '"></div>' + content};
+      var newTerminalHeading = function(){return terminalHeading.innerHTML = command + " — TBD"}
+      
        
       if (command === "hackathon") {
         newOutput(hackathon);
+        newTerminalHeading();
         newLabel();
       } else if (command === "crew") {
         newOutput(crew);
+        newTerminalHeading();
         newLabel();
       } else if (command === "manifesto") {
         newOutput(manifesto);
+        newTerminalHeading();
         newLabel();
       } else if (command === "program") {
         newOutput(program);
+        newTerminalHeading();
         newLabel();
       } else if (command === "register") {
         newOutput(register);
+        newTerminalHeading();
         newLabel();
       } else if (command === "sponsors") {
         newOutput(sponsors);
+        newTerminalHeading();
         newLabel();
       } else if (command === "help") {
         newOutput(help);
+        newTerminalHeading();
         newLabel();
       } else if (command === "contact") {
         newOutput(contact);
+        newTerminalHeading();
         newLabel();
       } else {
         newOutput("<p>command not found</p>");
