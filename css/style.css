@@ -33,13 +33,13 @@ input {
 
 }
 
-ol {
+ul, ol {
 	list-style-type: none;
 	margin:0;
 	padding:0;
 }
 
-article a, p, label, input {
+article a, p, label, input, ul {
 	margin: 5px 0 5px 0;
 	padding:0;
 }
