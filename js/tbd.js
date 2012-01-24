@@ -32,7 +32,18 @@ $(function() {
   var command = "";
   var commandInput = $("#commandInput");
   var output = $("#output");
-  commandInput.focus();
+
+
+  function commandInputFocus() {
+    if (navigator.userAgent.match(/iPad/i) != null){
+      commandInput.attr('disabled', 'disabled');
+      commandInput.removeAttr('autofocus');
+    } else {
+      commandInput.focus(); 
+    }
+  }
+  commandInputFocus();
+
 
   function input(e, that, clicked) {
     var unicode=e.keyCode? e.keyCode : e.charCode;
@@ -89,7 +100,7 @@ $(function() {
       commandInput.val("");
       command = "";
       clearInterval(interval)
-      commandInput.focus();
+      commandInputFocus();
       scrollToBottom();
 
     }
@@ -106,7 +117,7 @@ $(function() {
   }, "a.c");  
 
   $("body").on( "click", function(){
-    commandInput.focus();
+    commandInputFocus();
   });  
 
 
