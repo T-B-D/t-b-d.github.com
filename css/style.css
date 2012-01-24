@@ -126,6 +126,61 @@ footer a {
 	}
 }
 
+
+@media (max-height:695px) and (min-width:1180px) {
+	/*body{background-color: red}*/
+
+	footer.b10 {
+		top:70px;
+		right:30px;
+		padding:0;
+		margin:0;
+		width:141px;
+	}
+
+	footer > .mA {
+		margin: 0;
+		width:200px;
+	}
+
+	footer li {
+		display: table-row;
+		min-width: 100px;
+		width: 25%;
+		height: 80px;
+		vertical-align: middle; 
+		/*background: green;*/
+	}
+
+	.m-maxW761 {
+			display: none;
+	}
+
+
+	footer a {
+		margin: 0 auto;
+		display: table-cell;
+		width: 141px;
+		height: 43px;
+		overflow: hidden;
+		text-indent: -999px;
+		/*background-color: red;*/
+	}
+
+	footer {
+		display: table;
+		margin: 0 auto;
+		width: 100%;
+		padding: 0 10%;
+		/*max-width: 960px;*/
+		box-sizing: border-box;
+		-moz-box-sizing: border-box;
+		-webkit-box-sizing: border-box;
+	}
+
+
+}
+
 .sponsor-menmo {
 	background:url(../images/sponsor-menmo.png) no-repeat center center;
 }
@@ -283,7 +338,7 @@ footer a {
 
 .b0a80 {
 	background:	#000;
-	background: rgba(0,0,0,.80);
+	background: rgba(0,0,0,.60);
 }
 
 .b0a25 {
