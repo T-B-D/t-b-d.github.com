@@ -50,9 +50,9 @@ article a, p, label, input {
 
 /************ footer ************/
 /*background: rgba(0, 0, 0, .80)*/
-.footer {
+/*.footer {
 	position: fixed;
-	bottom: 0;
+	bottom: 10px;
 	width: 100%;
 	height: 100px;
 	min-height: 100px;
@@ -60,7 +60,7 @@ article a, p, label, input {
 	background: #f2f2f2;
 	z-index: 33;
 }
-
+*/
 .footer-content {
 	margin: 0 auto;
 }
@@ -70,7 +70,10 @@ footer {
 	margin: 0 auto;
 	width: 100%;
 	padding: 0 10%;
-	max-width: 960px;
+	/*max-width: 960px;*/
+	box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	-webkit-box-sizing: border-box;
 }
 
 footer ul {
@@ -97,16 +100,38 @@ footer a {
 	height: 43px;
 	overflow: hidden;
 	text-indent: -999px;
+	/*background-color: red;*/
+}
+
+.sponsor-about {
+	margin: 0 auto;
+	padding:0;
+	display: block;
+	font-size:14px;
+	width: 141px;
+	height: 43px;
+	color:#000;
+	text-align:right;
+}
+
+/*@media (max-width:500px) {
+	.m-maxW500 {
+		display: none;
+	}
+}
+*/
+@media (max-width:761px) {
+	.m-maxW761 {
+		display: none;
+	}
 }
 
 .sponsor-menmo {
-	border: 4px solid rgba(255,255,255,.9);
+	background:url(../images/sponsor-menmo.png) no-repeat center center;
+}
 
-	-webkit-border-radius: 4px;
-	-moz-border-radius: 4px;
-	border-radius: 4px;
-	padding: 4px;
-	background: rgba(255,255,255,.9) url(../images/sponsor-menmo.png) no-repeat center center;
+.sponsor-me {
+	background:url(../images/sponsor-media-evolution.png) no-repeat center center;
 }
 
 
@@ -216,11 +241,13 @@ footer a {
  **************** Position
  */
 
-.relative {
-	position:relative;
-}
+.relative {position:relative}
+.fixed {position:fixed}
+.z10 {z-index:10}
+.z20 {z-index:20}
+.b10 {bottom:10px;}
 
-.ib {display:inline-block;}
+.ib {display:inline-block}
 
 /*
  *********** Table
