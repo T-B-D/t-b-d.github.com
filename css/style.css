@@ -126,6 +126,12 @@ footer a {
 	}
 }
 
+@media (min-height:695px) {
+	footer.z10 {
+		z-index:100;
+	}
+}
+
 
 @media (max-height:695px) and (min-width:1180px) {
 	/*body{background-color: red}*/
@@ -136,6 +142,9 @@ footer a {
 		padding:0;
 		margin:0;
 		width:141px;
+	}
+	footer.z10 {
+		z-index:100;
 	}
 
 	footer > .mA {
