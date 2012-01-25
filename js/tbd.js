@@ -85,7 +85,7 @@ $(function() {
         newOutput(sponsors);
         newTerminalHeading();
         newLabel();
-      } else if (command === "help") {
+      } else if (command === "help" || /ls\s*/.test(command) || /dir\s*/.test(command)) {
         newOutput(help);
         newTerminalHeading();
         newLabel();
