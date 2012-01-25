@@ -44,8 +44,6 @@ article a, p, label, input, ul {
 	padding:0;
 }
 
-/************ Dimensions ************/
-
 
 
 /************ footer ************/
@@ -114,12 +112,21 @@ footer a {
 	text-align:right;
 }
 
+.sponsor-menmo {
+	background:url(../images/sponsor-menmo.png) no-repeat center center;
+}
+
+.sponsor-me {
+	background:url(../images/sponsor-media-evolution.png) no-repeat center center;
+}
+
 /*@media (max-width:500px) {
 	.m-maxW500 {
 		display: none;
 	}
 }
 */
+
 @media (max-width:761px) {
 	.m-maxW761 {
 		display: none;
@@ -131,7 +138,6 @@ footer a {
 		z-index:100;
 	}
 }
-
 
 @media (max-height:695px) and (min-width:1180px) {
 	/*body{background-color: red}*/
@@ -165,7 +171,6 @@ footer a {
 			display: none;
 	}
 
-
 	footer a {
 		margin: 0 auto;
 		display: table-cell;
@@ -186,17 +191,9 @@ footer a {
 		-moz-box-sizing: border-box;
 		-webkit-box-sizing: border-box;
 	}
-
-
 }
 
-.sponsor-menmo {
-	background:url(../images/sponsor-menmo.png) no-repeat center center;
-}
 
-.sponsor-me {
-	background:url(../images/sponsor-media-evolution.png) no-repeat center center;
-}
 
 
 
@@ -269,9 +266,6 @@ footer a {
 .maxW800 	{max-width:800px}
 .w80p 		{width:80%}
 .w100p 		{width:100%}
-
-
-
 
  /*
  *********** Border Radius
@@ -400,6 +394,7 @@ a {color: #cacaff;}
  **************** Scroller
  */
 
+/* Need to do a js hack for moz */
 
 ::-webkit-scrollbar {
     width: 8px;
@@ -419,10 +414,3 @@ a {color: #cacaff;}
     background:#666;
     /*background:#333;*/
 }
-
-
-
-
-
-
-

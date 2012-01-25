@@ -6,36 +6,39 @@
  *
  */
 
-var interval;
+// a lot of iPhone users visiting the site, needs to do something about that /Fredrik
+// navigator.userAgent.match(/iPhone/i) != null || navigator.userAgent.match(/iPod/i) != null
 
 $(function() {
-  var terminal = document.getElementById("terminal");
-  // var terminal = $("#terminal");
+  var terminal = document.getElementById("terminal"),
+      interval,
+      command = "",
+      commandInput = $("#commandInput"),
+      output = $("#output");
+         
 
   function scrollToBottom() {
     interval = window.setInterval(scroll,1);
   }
 
   function scroll() {
-
     if(terminal.scrollTop >= terminal.scrollHeight - terminal.offsetHeight){
       clearInterval(interval); 
     } else {
-      terminal.scrollTop = terminal.scrollTop + 6;  
+      terminal.scrollTop = terminal.scrollTop + 12;  
     }
   }
 
   scrollToBottom();
 
+
+
+
+
   window.onkeypress = input;
 
-  var command = "";
-  var commandInput = $("#commandInput");
-  var output = $("#output");
-
-
   function commandInputFocus() {
-    if (navigator.userAgent.match(/iPad/i) != null){
+    if (navigator.userAgent.match(/iPad/i) != null ){
       commandInput.attr('disabled', 'disabled');
       commandInput.removeAttr('autofocus');
     } else {
@@ -43,6 +46,12 @@ $(function() {
     }
   }
   commandInputFocus();
+
+  $("body").on( "click", function(){
+    commandInputFocus();
+  });  
+
+
 
 
   function input(e, that, clicked) {
@@ -61,6 +70,8 @@ $(function() {
       var newOutput = function(content){return output.html(output.html() + '<div><label class="ib">' + commandInputLabel.html() + '</label> <input disabled value="' + command + '"></div>' + content)};
       var newTerminalHeading = function(){return terminalHeading.html(command + " — TBD")}
       
+      command = $.trim(command);
+
       if (command === "hackathon") {
         newOutput(hackathon);
         newTerminalHeading();
@@ -93,6 +104,8 @@ $(function() {
         newOutput(contact);
         newTerminalHeading();
         newLabel();
+      } else if (command === "") {
+        newOutput("");  
       } else {
         newOutput("<p>command not found</p>");
       }
@@ -115,11 +128,5 @@ $(function() {
       commandInput.val("");
     }
   }, "a.c");  
-
-  $("body").on( "click", function(){
-    commandInputFocus();
-  });  
-
-
 
 });
