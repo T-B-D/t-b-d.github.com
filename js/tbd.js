@@ -7,6 +7,7 @@
  */
 
 // a lot of iPhone users visiting the site, needs to do something about that /Fredrik
+//
 // navigator.userAgent.match(/iPhone/i) != null || navigator.userAgent.match(/iPod/i) != null
 
 $(function() {
