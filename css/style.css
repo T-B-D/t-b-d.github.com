@@ -120,6 +120,12 @@ footer a {
 	background:url(../images/sponsor-media-evolution.png) no-repeat center center;
 }
 
+.sponsor-ff {
+	margin-top:-42px;
+	height:72px;
+	background:url(../images/sponsor-flatfrog.png) no-repeat center center;
+}
+
 /*@media (max-width:500px) {
 	.m-maxW500 {
 		display: none;
@@ -127,13 +133,48 @@ footer a {
 }
 */
 
+.challenges {
+	
+}
+
+.challenges-neo4j, .challenges-flatfrog {
+	height:49px;
+	display:block;
+	overflow: hidden;
+	text-indent: -999px;
+}
+
+.challenges-neo4j {
+	width:200px;
+	background: url(../images/challenges-neo4j.png) no-repeat center center;
+}
+
+.challenges-flatfrog {
+	width:147px;
+	height:80px;
+	background: url(../images/challenges-flatfrog.png) no-repeat center left;
+}
+
+@media (max-width:572px) {
+	.h572 {
+		display: none;
+	}
+}
+
+@media (max-width:761px) {
+	.m-maxW761 {
+		display: none;
+	}
+
+}
+
 @media (max-width:761px) {
 	.m-maxW761 {
 		display: none;
 	}
 }
 
-@media (min-height:695px) {
+@media (min-height:776px) {
 	footer.z10 {
 		z-index:100;
 	}
@@ -221,6 +262,7 @@ footer a {
 .ml4 {margin-left:4px}
 
 .mr1 {margin-right:1px}
+.mr10 {margin-right:10px}
 
 
 /*
@@ -238,12 +280,16 @@ footer a {
 .pt1 {padding-top:1px}
 .pt4 {padding-top:4px}
 
+.pl10 {padding-left:10px}
+
 .pb1 {padding-bottom:1px}
 .pb3 {padding-bottom:3px}
 
 
 .pr3 {padding-right:3px;}
+.pr10 {padding-right:10px}
 .pr40 {padding-right:40px;}
+
 
 
  /*
@@ -264,6 +310,7 @@ footer a {
 .minW500 	{min-width:700px}
 .maxW700 	{max-width:700px}
 .maxW800 	{max-width:800px}
+.w50p 		{width:50%}
 .w80p 		{width:80%}
 .w100p 		{width:100%}
 
@@ -298,11 +345,13 @@ footer a {
 /*
  **************** Position
  */
-
+.absolute {position: absolute;}
 .relative {position:relative}
 .fixed {position:fixed}
 .z10 {z-index:10}
 .z20 {z-index:20}
+.t0 {top:0}
+.r0 {right:0}
 .b10 {bottom:10px;}
 
 .ib {display:inline-block}
@@ -327,9 +376,15 @@ footer a {
 /*
  *********** Overflow
  */
-
+.o {overflow:hidden}
 .oys {overflow-y:scroll}
 
+
+.nTW {text-wrap:none; white-space: nowrap;text-overflow: clip;}
+
+
+.fl{float:left}
+.fr{float:right}
 /*
  **************** Colors
  */

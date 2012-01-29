@@ -89,6 +89,10 @@ $(function() {
         newOutput(program);
         newTerminalHeading();
         newLabel();
+      } else if (command === "challenges") {
+        newOutput(challenges);
+        newTerminalHeading();
+        newLabel();
       } else if (command === "register") {
         newOutput(register);
         newTerminalHeading();
