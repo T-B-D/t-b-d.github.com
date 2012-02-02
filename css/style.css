@@ -352,7 +352,7 @@ footer.b10 {
 }
 
 .sponsor-carlsberg {
-	margin-top:-4px;
+	margin-top:18px;
 	height:50px;
 	background:url(../images/sponsor-carlsberg.png) no-repeat center center;
 }
@@ -367,6 +367,7 @@ footer.b10 {
 	/*margin-top:-4px;*/
 	height:60px;
 	background:url(../images/sponsor-skane.png) no-repeat center center;
+	margin-top:-15px;
 }
 
 /*
