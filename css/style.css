@@ -374,7 +374,7 @@ footer.b10 {
  **************** Challenges
  */
 
-.challenges-neo4j, .challenges-flatfrog {
+.challenges-neo4j, .challenges-flatfrog, .challenges-tunaspot {
 	height:49px;
 	display:block;
 	overflow: hidden;
@@ -393,10 +393,9 @@ footer.b10 {
 }
 
 .challenges-tunaspot {
-/*	width:255px;
-	height:60px;
-	background: url(../images/challenges-tunaspot.png) no-repeat center left;*/
-	text-indent:0;
+	width:83px;
+	height:80px;
+	background: url(../images/challenges-tunaspot.png) no-repeat center left;
 }
 
 /*
