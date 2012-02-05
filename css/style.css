@@ -86,6 +86,7 @@ article a, p, label, input, ul {
 .pt0 {padding-top:0px}
 .pt1 {padding-top:1px}
 .pt4 {padding-top:4px}
+.pt14 {padding-top:14px}
 
 .pl10 {padding-left:10px}
 
@@ -158,10 +159,38 @@ article a, p, label, input, ul {
 .z10 {z-index:10}
 .z20 {z-index:20}
 .t0 {top:0}
+.t50 {top:50px}
+.t90 {top:90px}
+.t133 {top:133px}
 .r0 {right:0}
-.b10 {bottom:10px;}
+.r20 {right:20px}
+.l20 {left:20px}
+/*.b10 {bottom:10px;}*/
 
 .ib {display:inline-block}
+
+@media (min-height: 800px) {
+	.t90 {
+		top:140px;
+	}	
+	.t133 {
+		top:183px;
+
+	}
+}
+
+@media (min-width: 1300px) {
+	.r20 {right:50px}
+	.l20 {left:50px}
+}
+
+@media (min-width: 1500px) {
+	.r20 {right:100px}
+	.l20 {left:100px}
+}
+
+
+
 
 /*
  *********** Table
@@ -256,40 +285,39 @@ h1,h2,h3,h4,h5,h6 {
 a {color: #cacaff;}
 
 
-/************ footer ************/
+/************ sp ************/
 
-.footer-content {
+/*.footer-content {
 	margin: 0 auto;
-}
+}*/
 
-footer {
-	display: table;
-	margin: 0 auto;
+/*footer {*/
+	/*display: table;*/
+	/*margin: 0 auto;
 	width: 100%;
 	padding: 0 10%;
-	/*max-width: 960px;*/
 	box-sizing: border-box;
 	-moz-box-sizing: border-box;
 	-webkit-box-sizing: border-box;
-}
+}*/
 
-footer ul {
+.sp {
 	display: block;
 	width: 141px;
-	padding: 0 10%;
+	/*padding: 0 10%;*/
 	box-sizing: border-box;
 	-moz-box-sizing: border-box;
 	-webkit-box-sizing: border-box;
 }
 
-footer li {
+.sp li {
 	display: block;
 	width: 141px;
 	width: 141px;
 	height: 80px;
 }
 
-footer a {
+.sp a {
 	display: block;
 	width: 141px;
 	height: 43px;
@@ -297,20 +325,20 @@ footer a {
 	text-indent: -999px;
 }
 
-@media (max-width:572px) {
+/*@media (max-width:572px) {
 	.w572 {
 		display: none;
 	}
 }
-
+*/
 	
 @media (min-width:1180px) {
-	footer.z10 {
+	.sp.z10 {
 		z-index:100;
 	}
 }
 
-footer.b10 {
+/*.sp.b10 {
 	top:70px;
 	right:50px;
 	padding:0;
@@ -318,9 +346,9 @@ footer.b10 {
 	width:141px;
 	display: block;
 
-}
+}*/
 
-.sponsor-about {
+ .sp .sponsor-about {
 	margin: 0 auto;
 	padding:0;
 	display: block;
@@ -331,50 +359,57 @@ footer.b10 {
 	text-align:right;
 }
 
-.sponsor-menmo {
+.sp .sponsor-menmo {
 	background:url(../images/sponsor-menmo.png) no-repeat center center;
 }
 
-.sponsor-me {
+.sp .sponsor-me {
 	background:url(../images/sponsor-media-evolution.png) no-repeat center center;
 }
 
-.sponsor-ff {
-	margin-top:-42px;
+.sp .sponsor-ff {
+	/*margin-top:-42px;*/
 	height:72px;
 	background:url(../images/sponsor-flatfrog.png) no-repeat center center;
 }
 
-.sponsor-catera {
+.sp .sponsor-catera {
 	margin-top:-4px;
 	height:50px;
 	background:url(../images/sponsor-catera.png) no-repeat center center;
 }
 
-.sponsor-carlsberg {
+.sp .sponsor-carlsberg {
 	margin-top:18px;
 	height:50px;
 	background:url(../images/sponsor-carlsberg.png) no-repeat center center;
 }
 
-.sponsor-martin {
+.sp .sponsor-martin {
 	/*margin-top:-4px;*/
 	height:43px;
 	background:url(../images/sponsor-martin.png) no-repeat center center;
 }
 
-.sponsor-skane {
+.sp .sponsor-skane {
 	/*margin-top:-4px;*/
 	height:60px;
 	background:url(../images/sponsor-skane.png) no-repeat center center;
 	margin-top:-15px;
 }
 
+.sp .sponsor-inuse {
+	/*margin-top:-4px;*/
+	width:132px;
+	height:50px;
+	background: url(../images/sponsor-inuse.png) no-repeat center center;	
+}
+
 /*
  **************** Challenges
  */
 
-.challenges-neo4j, .challenges-flatfrog, .challenges-tunaspot {
+.challenges-neo4j, .challenges-flatfrog, .challenges-tunaspot, .challenges-inuse {
 	height:49px;
 	display:block;
 	overflow: hidden;
@@ -396,6 +431,12 @@ footer.b10 {
 	width:83px;
 	height:80px;
 	background: url(../images/challenges-tunaspot.png) no-repeat center left;
+}
+
+.challenges-inuse {
+	width:132px;
+	height:50px;
+	background: url(../images/challenges-inuse.png) no-repeat center center;	
 }
 
 /*
