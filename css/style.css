@@ -62,8 +62,8 @@ article a, p, label, input, ul {
 
 .mA {margin: 0 auto}
 
-.mt10 {margin-top:10px;}
-.mt30 {margin-top:30px;}
+.mt10 {margin-top:10px}
+.mt30 {margin-top:30px}
 
 .ml1 {margin-left:1px}
 .ml4 {margin-left:4px}
@@ -80,7 +80,8 @@ article a, p, label, input, ul {
 	padding:1px;
 }*/
 
-.pa10 {padding: 20px}
+.pa10 {padding: 10px}
+.pa20 {padding: 20px}
 
 
 .pt0 {padding-top:0px}
@@ -92,11 +93,12 @@ article a, p, label, input, ul {
 
 .pb1 {padding-bottom:1px}
 .pb3 {padding-bottom:3px}
+.pb14 {padding-bottom:14px}
 
 
-.pr3 {padding-right:3px;}
+.pr3 {padding-right:3px}
 .pr10 {padding-right:10px}
-.pr40 {padding-right:40px;}
+.pr40 {padding-right:40px}
 
 
 
@@ -111,6 +113,9 @@ article a, p, label, input, ul {
 
 .h80p {height:80%}
 .h100p {height:100%}
+
+
+.minH360 {min-height:360px}
 
  /*
  *********** Width
@@ -160,24 +165,12 @@ article a, p, label, input, ul {
 .z20 {z-index:20}
 .t0 {top:0}
 .t50 {top:50px}
-.t90 {top:90px}
-.t133 {top:133px}
 .r0 {right:0}
 .r20 {right:20px}
 .l20 {left:20px}
 /*.b10 {bottom:10px;}*/
 
 .ib {display:inline-block}
-
-@media (min-height: 800px) {
-	.t90 {
-		top:140px;
-	}	
-	.t133 {
-		top:183px;
-
-	}
-}
 
 @media (min-width: 1300px) {
 	.r20 {right:50px}
@@ -188,6 +181,17 @@ article a, p, label, input, ul {
 	.r20 {right:100px}
 	.l20 {left:100px}
 }
+
+@media (min-width: 1600px) {
+	.r20 {right:150px}
+	.l20 {left:150px}
+}
+
+@media (min-width: 1800px) {
+	.r20 {right:200px}
+	.l20 {left:200px}
+}
+
 
 
 
@@ -229,6 +233,8 @@ article a, p, label, input, ul {
  **************** Colors
  */
 
+.c1 {color:#5d5d5d}
+
  /*
  *********** Background Color
  */
@@ -256,7 +262,10 @@ article a, p, label, input, ul {
 	background: -ms-linear-gradient(90deg , #b2b2b2 0%, #e5e5e5 100%);
 	background: linear-gradient(90deg , #b2b2b2 0%, #e5e5e5 100%);
 }
-
+ /*
+ *********** Border Radius
+ */
+ .ba1 {border:1px solid #fff}
  /*
  *********** Box Shadow
  */
@@ -273,6 +282,8 @@ h1,h2,h3,h4,h5,h6 {
 	margin: 0;
 	padding: 0;
 }
+
+.h4 {font-size:10px;}
 
 .tac{text-align:center;}
 
@@ -302,7 +313,8 @@ a {color: #cacaff;}
 }*/
 
 .sp {
-	display: block;
+	/*display: block;*/
+	min-width: 141px;
 	width: 141px;
 	/*padding: 0 10%;*/
 	box-sizing: border-box;
@@ -313,14 +325,14 @@ a {color: #cacaff;}
 .sp li {
 	display: block;
 	width: 141px;
-	width: 141px;
-	height: 80px;
+	/*height: 80px;*/
+	min-height: 70px;
 }
 
 .sp a {
 	display: block;
 	width: 141px;
-	height: 43px;
+	min-height: 70px;
 	overflow: hidden;
 	text-indent: -999px;
 }
@@ -360,50 +372,58 @@ a {color: #cacaff;}
 }
 
 .sp .sponsor-menmo {
+	/*height:41px;*/
 	background:url(../images/sponsor-menmo.png) no-repeat center center;
 }
 
 .sp .sponsor-me {
+	/*height:35px;*/
 	background:url(../images/sponsor-media-evolution.png) no-repeat center center;
 }
 
 .sp .sponsor-ff {
 	/*margin-top:-42px;*/
-	height:72px;
+	height:90px;
 	background:url(../images/sponsor-flatfrog.png) no-repeat center center;
 }
 
 .sp .sponsor-catera {
-	margin-top:-4px;
-	height:50px;
+	margin-top:-7px;
+	height:80px;
 	background:url(../images/sponsor-catera.png) no-repeat center center;
 }
 
 .sp .sponsor-carlsberg {
-	margin-top:18px;
-	height:50px;
+	margin-top:7px;
+	height:90px;
 	background:url(../images/sponsor-carlsberg.png) no-repeat center center;
 }
 
 .sp .sponsor-martin {
 	/*margin-top:-4px;*/
-	height:43px;
+	/*height:43px;*/
 	background:url(../images/sponsor-martin.png) no-repeat center center;
 }
 
-.sp .sponsor-skane {
-	/*margin-top:-4px;*/
-	height:60px;
-	background:url(../images/sponsor-skane.png) no-repeat center center;
-	margin-top:-15px;
-}
-
 .sp .sponsor-inuse {
-	/*margin-top:-4px;*/
-	width:132px;
-	height:50px;
+	margin-top:10px;
+	/*height:50px;*/
 	background: url(../images/sponsor-inuse.png) no-repeat center center;	
 }
+
+.sp .sponsor-pgross {
+	/*margin-top:-10px;*/
+	/*margin-top:-4px;*/
+	/*height:74px;*/
+	background: url(../images/sponsor-pgross.png) no-repeat center center;	
+}
+
+.sp .sponsor-skane {
+	margin-top:10px;
+	/*height:60px;*/
+	background:url(../images/sponsor-skane.png) no-repeat bottom center;
+}
+
 
 /*
  **************** Challenges
