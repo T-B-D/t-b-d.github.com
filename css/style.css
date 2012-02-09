@@ -161,6 +161,7 @@ article a, p, label, input, ul {
 .absolute {position: absolute;}
 .relative {position:relative}
 .fixed {position:fixed}
+.z1 {z-index:0}
 .z10 {z-index:10}
 .z20 {z-index:20}
 .t0 {top:0}
@@ -345,8 +346,8 @@ a {color: #cacaff;}
 */
 	
 @media (min-width:1180px) {
-	.sp.z10 {
-		z-index:100;
+	.z1 {
+		z-index:100;	
 	}
 }
 
