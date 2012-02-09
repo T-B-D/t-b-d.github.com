@@ -109,6 +109,10 @@ $(function() {
         newOutput(contact);
         newTerminalHeading();
         newLabel();
+      } else if (command === "menu") {
+        newOutput(menu);
+        newTerminalHeading();
+        newLabel();
       } else if (command === "") {
         newOutput("");  
       } else {
