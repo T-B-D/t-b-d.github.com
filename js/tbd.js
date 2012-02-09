@@ -113,6 +113,10 @@ $(function() {
         newOutput(menu);
         newTerminalHeading();
         newLabel();
+      } else if (command === "coffee") {
+        newOutput(coffee);
+        newTerminalHeading();
+        newLabel();
       } else if (command === "") {
         newOutput("");  
       } else {
