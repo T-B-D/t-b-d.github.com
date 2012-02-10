@@ -117,6 +117,10 @@ $(function() {
         newOutput(coffee);
         newTerminalHeading();
         newLabel();
+      } else if (command === "pitches") {
+        newOutput(pitches);
+        newTerminalHeading();
+        newLabel();
       } else if (command === "") {
         newOutput("");  
       } else {
