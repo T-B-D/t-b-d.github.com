@@ -150,6 +150,7 @@ $(function() {
   $("#goToInfo").on("click", function() { 
     $("#info").css("display", "block");
     $("#blog").css("display", "none");
+    commandInputFocus();
     return false;
   });  
 
