@@ -24,30 +24,82 @@
     <!--[if lt IE 9]><h1 style="margin:50px; color:#222; font-size:20px;">Hi there! This site is not for people with old web browsers. Please try again.</h1><![endif]-->
     <div id="container" class="table h100p w100p fixed z20 container">
         <div class="cell w100p">
-            <div class="mA w80p maxW800 br5 pt1 pb1 br1 b0a25 bs1 ">
-                <header class="br5500 ml1 mr1">
-                    <div class="bE5 br4400 tac">
-                        <h1 id="terminalHeading" class="p1 pt4 pb3">{% if page.title %} {{ page.title }} — {% endif %} TBD<!--  — 86x24 --></h1>
-                    </div>
-                    <div class="h1 b6A br4400"></div>
-                </header>
-                <div class="b0a80 br0044 ml1 mr1">
-                <!-- Add pr3 to get webkit scroll bar padding correct, can't be used in moz -->
-                    <article id="terminal" class="oys h500 br0044 pa20 pt0">
-                        <hgroup class="mt10">
-                            <h1>TBD</h1>
-                            <h2>Solve Real Problems, Win Real Prizes</h2>
-                            <h3>Feb 10-12, 2012, Djäkne Kaffebar, Malmö</h3>
-                        </hgroup>
-                        {{ content }}
-                        <div id="output"></div>                       
-                        <div>
-                            <label id="commandInputLabel" class="ib" for="commandInput">t-b-d.org:~ {{ page.title }}$</label> <input id="commandInput" class="" type="text" autofocus>
+            <div class="mA w80p maxW800 br5 pt1 pb1 br1 b0a25 bs1 relative">
+                
+                <div id="blog" class="">
+                    <header class="br5500 ml1 mr1">
+                        <div class="bE5 br4400 tac">
+                            <h1 class="p1 pt5 pb4">blog — TBD</h1>
                         </div>
-                    </article>
-<!--                <div class="h4 br0044 b0a80 ml1 mr1">
-                        <div class="fr h100p" style="width: 10px; background:magenta"></div>
-                    </div> -->
+                    </header>
+                    <div id="blogTabMenu" class="h21 bA2 bs2 brt bs4 relative">
+                        <div class="table absolute h20">
+                            <div class="cell w2 b bb pt2 tac b95-h p2 sh1 un"></div>
+                            <a href="" class="trickhide cell bs3 w249 b bb pt2 p2 sh1 un tac bAF ba666 btn br0044">blog</a>
+                            <a id="goToInfo" href="#" class="cell w249 b bb pt2 tac br666 b95-h p2 sh1 un">home - t-b-d.org</a>
+                        </div>
+                    </div>
+                    <div class="h1 bAF"></div>
+                    <div class="h1 b6A"></div>
+                    <div class="bFF br0044 ml1 mr1">
+                    <!-- Add pr3 to get webkit scroll bar padding correct, can't be used in moz -->
+                        <div class="bb blog oys h500 br0044 pa20 c3 pt0">
+                            <article class="bb pa20">
+                                <img class="" src="/images/blog-tunaspot.jpg">
+                                <h2 class="mt10">Team Tunaspot</h2>
+                                <p class="p3">Published: 15:18 11 Feb 2012</p>
+                                <p>Secret development of their <a href="http://www.tunaspot.com/">location based music service</a>.</p>
+                            </article>
+                            <hr>
+                            <article class="bb pa20">
+                                <img class="" src="/images/blog-augumentary.jpg">
+                                <h2 class="mt10">Team <i>The Augumentary</i></h2>
+                                <p class="p3">Published: 15:12 11 Feb 2012</p>
+                                <p>Helps documentary filmmaker Simon Klose develop a
+                                way to remotely control embedded links in the upcoming film <i>TPB AFK:
+                                The Pirate Bay Away From Keyboard</i>.</p>
+                            </article>
+                            <hr>
+                        </div>
+                    </div>
+                </div>
+
+
+
+                <div id="info" class="hide">
+                    <header class="br5500 ml1 mr1">
+                        <div class="bE5 br4400 tac">
+                            <h1 id="terminalHeading" class="p1 pt5 pb4">{% if page.title %} {{ page.title }} — {% endif %} TBD<!--  — 86x24 --></h1>
+                        </div>
+                        <!-- <div class="h1 b6A br4400"></div> -->
+                    </header>
+                    <div id="terminalTabMenu" class="h21 bA2 bs2 brt bs4 relative">
+                        <div class="table absolute h20">
+                            <div class="cell w2 b bb pt2 tac b95-h p2 sh1 un"></div>
+                            <a id="goToBlog" href="" class="cell w249 b bb pt2 tac b95-h p2 sh1 un">blog</a>
+                            <a href="" class="trickhide cell bs3 w249 b bb pt2 p2 sh1 un tac bAF ba666 btn br0044">home - t-b-d.org</a>
+                        </div>
+                    </div>
+                    <div class="h1 bAF"></div>
+                    <div class="h1 b6A"></div>
+                    <div class="b0a80 br0044 ml1 mr1">
+                    <!-- Add pr3 to get webkit scroll bar padding correct, can't be used in moz -->
+                        <article id="terminal" class="bb oys h500 br0044 pa20 pt0">
+                            <hgroup class="mt10">
+                                <h1>TBD</h1>
+                                <h2>Solve Real Problems, Win Real Prizes</h2>
+                                <h3>Feb 10-12, 2012, Djäkne Kaffebar, Malmö</h3>
+                            </hgroup>
+                            {{ content }}
+                            <div id="output"></div>                       
+                            <div>
+                                <label id="commandInputLabel" class="ib" for="commandInput">t-b-d.org:~ {{ page.title }}$</label> <input id="commandInput" class="" type="text" autofocus>
+                            </div>
+                        </article>
+    <!--                <div class="h4 br0044 b0a80 ml1 mr1">
+                            <div class="fr h100p" style="width: 10px; background:magenta"></div>
+                        </div> -->
+                    </div>
                 </div>
             </div>
         </div>

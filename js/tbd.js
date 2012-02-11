@@ -144,6 +144,20 @@ $(function() {
     }, mouseleave: function(){
       commandInput.val("");
     }
-  }, "a.c");  
+  }, "a.c");
+
+
+  $("#goToInfo").on("click", function() { 
+    $("#info").css("display", "block");
+    $("#blog").css("display", "none");
+    return false;
+  });  
+
+  $("#goToBlog").on("click", function() { 
+    $("#blog").css("display", "block");
+    $("#info").css("display", "none");
+    return false;
+  });  
+
 
 });
