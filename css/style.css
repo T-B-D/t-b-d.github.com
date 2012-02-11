@@ -279,6 +279,7 @@ article a, p, label, input, ul {
 	background: -o-linear-gradient(270deg, rgba(0,0,0,0.25) 27px,rgba(0,0,0,0.5) 27px,rgba(0,0,0,0.8) 27px, rgba(0,0,0,0.8) 100%);
 	background: -ms-linear-gradient(270deg, rgba(0,0,0,0.25) 27px,rgba(0,0,0,0.5) 27px,rgba(0,0,0,0.8) 27px, rgba(0,0,0,0.8) 100%);
 	background: linear-gradient(270deg, rgba(0,0,0,0.25) 27px,rgba(0,0,0,0.5) 27px,rgba(0,0,0,0.8) 27px, rgba(0,0,0,0.8) 100%);
+	/*	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#000', endColorstr='#bf6e4e',GradientType=0 );*/
 }
 
 .bE5 {
@@ -288,6 +289,8 @@ article a, p, label, input, ul {
 	background: -o-linear-gradient(90deg , #b2b2b2 0%, #e5e5e5 100%);
 	background: -ms-linear-gradient(90deg , #b2b2b2 0%, #e5e5e5 100%);
 	background: linear-gradient(90deg , #b2b2b2 0%, #e5e5e5 100%);
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#b2b2b2', endColorstr='#e5e5e5',GradientType=0 );
+
 }
 /*
 *********** Border 
