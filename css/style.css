@@ -289,7 +289,7 @@ article a, p, label, input, ul {
 	background: -o-linear-gradient(90deg , #b2b2b2 0%, #e5e5e5 100%);
 	background: -ms-linear-gradient(90deg , #b2b2b2 0%, #e5e5e5 100%);
 	background: linear-gradient(90deg , #b2b2b2 0%, #e5e5e5 100%);
-	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#b2b2b2', endColorstr='#e5e5e5',GradientType=0 );
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#e5e5e5', endColorstr='#b2b2b2',GradientType=0 );
 
 }
 /*
